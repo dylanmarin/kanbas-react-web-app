@@ -1,0 +1,84 @@
+
+.wd-profile-navigation {
+    background-color: white;
+    padding: 0;
+    font-family: "Helvetica", sans-serif;
+    font-size: 1em;
+    width: 160px;
+}
+
+.wd-profile-navigation a {
+    text-decoration: none;
+    color: red;
+}
+
+.wd-profile-navigation a:hover {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.wd-profile-navigation li.wd-active a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+    color: black;
+}
+
+.wd-profile-navigation li {
+    padding: 3px 8px;
+    margin: 10px 0;
+}
+
+.wd-profile-navigation li.wd-active {
+    border-left: solid;
+    border-left-color: black;
+    border-left-width: thin;
+}
+
+.wd-profile-navigation li.wd-active a {
+    color: black;
+}
+
+.wd-main-content-window {
+    margin: 20px 20px 20px 105px;
+}
+
+.wd-main-content-window a {
+    text-decoration: none;
+}
+
+.wd-main-content-window div.wd-hamburger-icon i{
+    margin-right: 15px;
+}
+
+
+.wd-main-content-window div.wd-hamburger-icon a:hover{
+    text-decoration: none;
+}
+
+.wd-main-content-window div.wd-account-icon i {
+    width: 100px;
+}
+
+.wd-main-content-window a {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-main-content-window a:hover {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.wd-main-content-window button i {
+    margin-right: 5px;
+}
+
+.wd-main-content-window button {
+    margin-right: 15px;
+}
+
+.wd-margin-top-15 {
+    margin-top: 15px;
+}

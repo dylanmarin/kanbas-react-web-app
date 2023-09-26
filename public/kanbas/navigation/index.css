@@ -28,14 +28,14 @@
 }
 
 .wd-main-navigation li.wd-active a {
-    color: var(--canvas-red);
+    color: var(--wd-canvas-red);
     background-color: white;
     font-size: 0.8em;
 }
 
 .wd-main-navigation li.wd-active {
     background-color: white;
-    color: var(--canvas-red);
+    color: var(--wd-canvas-red);
 }
 
 .wd-main-navigation i.wd-account-icon  {
@@ -43,7 +43,7 @@
 }
 
 .wd-main-navigation a i {
-    color: var(--canvas-red);
+    color: var(--wd-canvas-red);
     font-size: 1.5em;
 }
 

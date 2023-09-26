@@ -4,7 +4,7 @@
 /*}*/
 
 p#id-selector-1 {
-    background-color: var(--canvas-red);
+    background-color: var(--wd-canvas-red);
     color: white;
 }
 
@@ -19,7 +19,7 @@ p#id-selector-2 {
 }
 
 .wd-selector-1 .wd-selector-3 {
-    background-color: var(--canvas-red);
+    background-color: var(--wd-canvas-red);
     color: white;
 }
 

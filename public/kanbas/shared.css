@@ -1,5 +1,5 @@
 :root {
-    --canvas-red: #d41a2b;
+    --wd-canvas-red: #d41a2b;
 }
 
 .wd-flex-row-container {
@@ -18,5 +18,5 @@
 }
 
 .wd-color-red {
-    color: var(--canvas-red);
+    color: var(--wd-canvas-red);
 }

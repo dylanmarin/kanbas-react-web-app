@@ -9,13 +9,13 @@
 
 .wd-profile-navigation a {
     text-decoration: none;
-    color: var(--canvas-red);
+    color: var(--wd-canvas-red);
 }
 
 .wd-profile-navigation a:hover {
-    color: var(--canvas-red);
+    color: var(--wd-canvas-red);
     text-decoration: underline;
-    text-decoration-color: var(--canvas-red);
+    text-decoration-color: var(--wd-canvas-red);
 }
 
 .wd-profile-navigation li.wd-active a:hover {
@@ -61,14 +61,14 @@
 }
 
 .wd-main-content-window a {
-    color: var(--canvas-red);
+    color: var(--wd-canvas-red);
     text-decoration: none;
 }
 
 .wd-main-content-window a:hover {
-    color: var(--canvas-red);
+    color: var(--wd-canvas-red);
     text-decoration: underline;
-    text-decoration-color: var(--canvas-red);
+    text-decoration-color: var(--wd-canvas-red);
 }
 
 .wd-main-content-window button i {

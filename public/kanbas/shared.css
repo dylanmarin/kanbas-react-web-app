@@ -1,3 +1,6 @@
+:root {
+    --canvas-red: #d41a2b;
+}
 
 .wd-flex-row-container {
     display: flex;
@@ -10,11 +13,10 @@
 }
 
 .wd-flex-
-
 .wd-offset-sidebar {
     margin-left: 85px;
 }
 
 .wd-color-red {
-    color: red;
+    color: var(--canvas-red);
 }

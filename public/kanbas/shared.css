@@ -20,3 +20,24 @@
 .wd-color-red {
     color: var(--wd-canvas-red);
 }
+
+.wd-margin-right-5 {
+    margin-right: 5px;
+}
+
+
+.wd-float-left {
+    float: left;
+}
+
+
+.wd-float-right {
+    float: right;
+    height: 100px;
+}
+
+.form-control {
+    margin-bottom:10px;
+    /*min-width: 200px;*/
+    /*max-width: 500px;*/
+}

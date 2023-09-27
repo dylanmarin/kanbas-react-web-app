@@ -1,146 +1,256 @@
-<table border="0" width="100%">
-    <!--Main Navigation-->
-    <td valign="top">
-        <ul>
+<html lang="english">
+<head>
+    <link href="/kanbas/navigation/index.css" rel="stylesheet">
+    <link href="/kanbas/profile/index.css" rel="stylesheet">
+    <link href="/kanbas/shared.css" rel="stylesheet">
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>Courses - Home</title>
+</head>
+<body>
+<div class="wd-flex-row-container">
+    <div class="wd-kanbas-navigation">
+        <ul class="list-unstyled wd-main-navigation">
             <li>
-                <a href="/kanbas/profile/index.html">Account</a>
+                <img src="/img/neu.png">
+            </li>
+            <li class="wd-active">
+                <a href="/kanbas/profile/index.html">
+                    <div>
+                        <i class="fa-solid fa-user wd-account-icon"></i>
+                    </div>
+                    Account
+                </a>
             </li>
             <li>
-                <a href="#">Dashboard</a>
+                <a href="#">
+                    <div>
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+                    Dashboard
+                </a>
             </li>
             <li>
-                <a href="/kanbas/home.html">Courses</a>
+                <a href="/kanbas/home.html">
+                    <div>
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    Courses
+                </a>
             </li>
             <li>
-                <a href="#">Calendar</a>
+                <a href="#">
+                    <div>
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                    Calendar
+                </a>
             </li>
             <li>
-                <a href="#">Inbox</a>
+                <a href="#">
+                    <div>
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                    Inbox
+                </a>
             </li>
             <li>
-                <a href="#">History</a>
+                <a href="#">
+                    <div>
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    History
+                </a>
             </li>
             <li>
-                <a href="#">Studio</a>
+                <a href="#">
+                    <div>
+                        <i class="fa-solid fa-display"></i>
+                    </div>
+                    Studio</a>
             </li>
             <li>
-                <a href="#">Commons</a>
+                <a href="#">
+                    <div>
+                        <i class="fa-solid fa-circle-right"></i>
+                    </div>
+                    Commons</a>
             </li>
             <li>
-                <a href="#">Help</a>
+                <a href="#">
+                    <div>
+                        <i class="fa-regular fa-circle-question"></i>
+                    </div>
+                    Help
+                </a>
             </li>
         </ul>
-    </td>
-    <!--Profile Navigation Bar-->
-    <td valign="top">
-        <ul>
-            <li>
-                <a href=#>Notifications</a>
-            </li>
-            <li>
-                <a href="/kanbas/profile/index.html">Profile</a>
-            </li>
-            <li>
-                <a href="#">Files</a>
-            </li>
-            <li>
-                <a href="#">Settings</a>
-            </li>
-            <li>
-                <a href="#">ePortfolios</a>
-            </li>
-            <li>
-                <a href="#">Shared Content</a>
-            </li>
-            <li>
-                <a href="#">The Hub</a>
-            </li>
-            <li>
-                <a href="#">Qwickly Course Tools</a>
-            </li>
-            <li>
-                <a href="#">Global Announcements</a>
-            </li>
-        </ul>
-    </td>
-    <!--Profile Content-->
-    <td valign="top">
+    </div>
+    <div class="wd-flex-col-container wd-main-content-window flex-grow-1">
+        <div class="wd-hamburger-icon">
+            <a href="#">
+                <i class="fa-solid fa-bars fa-xl wd-color-red"></i>
+            </a>
+            Dylan Marin's Profile
+            <hr/>
+        </div>
+        <div class="wd-flex-row-container wd-margin-top-15">
+            <div>
+                <ul class="list-unstyled wd-profile-navigation">
+                    <li>
+                        <a href=#>Notifications</a>
+                    </li>
+                    <li class="wd-active">
+                        <a href="/kanbas/profile/index.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#">Files</a>
+                    </li>
+                    <li>
+                        <a href="#">Settings</a>
+                    </li>
+                    <li>
+                        <a href="#">ePortfolios</a>
+                    </li>
+                    <li>
+                        <a href="#">Shared Content</a>
+                    </li>
+                    <li>
+                        <a href="#">The Hub</a>
+                    </li>
+                    <li>
+                        <a href="#">Qwickly Course Tools</a>
+                    </li>
+                    <li>
+                        <a href="#">Global Announcements</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wd-flex-col-width">
+                <div>
+                    <i class="fa-solid fa-user fa-8x"></i>
+                </div>
+                <h3>Dylan Marin</h3>
+                <div>
+                    <form action="/kanbas/profile/index.html">
 
-        <h2>Dylan Marin</h2>
+                        <div>
+                            <h6>
+                                <label for="name">Name:*</label>
+                            </h6>
+                            <input type="text" name="name" id="name" placeholder="Dylan Marin"
+                                   value="Dylan Marin"
+                                   class="form-control"/>
+                        </div>
 
-        <form action="/kanbas/profile/index.html">
-            <label for="name">Name:*</label>
-            <input type="text" name="name" id="name" placeholder="Dylan Marin" value="Dylan Marin"/>
+                        <div>
+                            <h6>
+                                <label for="pronouns">Pronouns:</label>
+                            </h6>
+                            <select name="pronouns" id="pronouns">
+                                <option value="NONE">None</option>
+                                <option selected value="HE">he/him</option>
+                                <option value="SHE">she/her</option>
+                                <option value="THEY">they/them</option>
+                                <option value="OTHER">other</option>
+                            </select>
+                        </div>
+                        <br/>
 
-            <label for="pronouns">Pronouns:</label>
-            <select name="pronouns" id="pronouns">
-                <option value="NONE">None</option>
-                <option selected value="HE">he/him</option>
-                <option value="SHE">she/her</option>
-                <option value="THEY">they/them</option>
-                <option value="OTHER">other</option>
-            </select>
-            <br/><br/>
+                        <h6>
+                            <label for="title">Title:</label>
+                        </h6>
+                        <div>
+                            <input name="title" type="text" id="title" value="" class="form-control"/>
+                        </div>
 
-            <label for="title">Title:</label>
-            <input name="title" type="text" id="title" value=""/>
-
-            <h3>
-                Contact
-            </h3>
-            No registered services, you can add some on the <a href="#">settings</a> page.<br/><br/>
-
-            <h3>
-                Biography
-            </h3>
-            5th year at Northeastern, completing a PlusOne in MSCS at Northeastern University. Strong interest in
-            AI/ML.<br/>
-            <textarea name="biography" id="biography" rows="4" cols="50" placeholder="Biography">5th year at Northeastern, completing a PlusOne in MSCS at Northeastern University. Strong interest in AI/ML.</textarea><br/><br/>
-
-            <h3>
-                Links
-            </h3>
-            <ul>
-                <li><a href="https://www.youtube.com">YouTube - Links to an External Site</a></li>
-            </ul>
-
-            <table>
-                <thead>
-                <tr>
-
-                    <td>
                         <h3>
-                            Title
+                            Contact
                         </h3>
-                    </td>
+                        No registered services, you can add some on the <a href="#">settings</a> page.<br/><br/>
 
-                    <td>
                         <h3>
-                            URL
+                            Biography
                         </h3>
-                    </td>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>
-                        <input type="text" id="link-title" value="YouTube"/>-->
-                    </td>
-                    <td>
-                        <input type="text" id="link-url" value="https://www.youtube.com"/>
-                    </td>
-                    <td>
-                        <a href="#">Remove</a>
-                    </td>
-                </tbody>
-            </table>
 
-            <button type="button">Add another link</button>
-            <br/>
-            <button>Cancel</button>
-            <button>Save Profile</button>
-            <br/>
-            <button type="button">Edit Profile</button><button>Cancel Editing</button>
-        </form>
-    </td>
-</table>
+                        <textarea name="biography"
+                                  id="biography"
+                                  rows="6"
+                                  cols="80"
+                                  placeholder="Biography"
+                                  class="form-control">5th year at Northeastern, completing a PlusOne in MSCS at Northeastern University. Strong interest in AI/ML.</textarea>
+
+                        <h3>
+                            Links
+                        </h3>
+
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="form-group link-label text-center">
+
+                                    <label for="linkTitle"><h5>Title</h5></label>
+                                    <input
+                                            type="text"
+                                            class="form-control"
+                                            id="linkTitle"
+                                            value="Youtube"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-arrow-right fa-3x mt-4"></i>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group link-label text-center">
+                                    <label for="linkURL"><h5>URL</h5></label>
+                                    <input
+                                            type="text"
+                                            class="form-control"
+                                            id="linkURL"
+                                            value="https://www.youtube.com/@WebDevTV"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-auto text-center ">
+                                <a href="#">
+                                    <i class="fa-solid fa-x mt-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-sm btn-secondary">Add another link</button>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="row wd-float-right">
+                            <div class="col wd-cancel-save-buttons">
+                                <button class="btn btn-secondary wd-margin-right-5">Cancel</button>
+                            </div>
+                            <div class="col-auto wd-cancel-save-buttons">
+                                <button class="btn btn-danger wd-margin-right-5">Save Profile</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--                    omitted because not present in visuals-->
+                <!--                    <button type="button">Edit Profile</button>-->
+                <!--                    <button>Cancel Editing</button>-->
+            </div>
+            <div class="flex-grow-1">
+                <div class="float-end">
+                    <form action="/kanbas/profile/index.html">
+                        <button class="btn btn-secondary wd-cancel-editing">
+                            <i class="fa-solid fa-pencil"></i>
+                            Cancel Editing
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

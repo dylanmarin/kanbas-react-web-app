@@ -38,7 +38,7 @@
     color: var(--wd-canvas-red);
 }
 
-.wd-main-navigation i.wd-account-icon  {
+.wd-main-navigation i.wd-account-icon {
     color: grey;
 }
 
@@ -47,3 +47,49 @@
     font-size: 1.5em;
 }
 
+.wd-secondary-navigation {
+    background-color: white;
+    background-color: grey;
+    padding: 0;
+    font-family: "Helvetica", sans-serif;
+    font-size: 0.9em;
+    width: 160px;
+    left: 0;
+    height: 100%;
+}
+
+.wd-secondary-navigation ul {
+    list-style: none;
+}
+
+.wd-secondary-navigation a {
+    text-decoration: none;
+    color: var(--wd-canvas-red);
+}
+
+.wd-secondary-navigation a:hover {
+    color: var(--wd-canvas-red);
+    text-decoration: underline;
+    text-decoration-color: var(--wd-canvas-red);
+}
+
+.wd-secondary-navigation li.wd-active a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+    color: black;
+}
+
+.wd-secondary-navigation li {
+    padding: 3px 8px;
+    margin: 5px 0;
+}
+
+.wd-secondary-navigation li.wd-active {
+    border-left: solid;
+    border-left-color: black;
+    border-left-width: thin;
+}
+
+.wd-secondary-navigation li.wd-active a {
+    color: black;
+}

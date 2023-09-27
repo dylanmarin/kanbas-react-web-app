@@ -25,3 +25,14 @@
     margin-right: 35px;
 }
 
+
+
+.wd-published-courses-window a {
+    color: black;
+    text-decoration: none;
+}
+
+.wd-published-courses-window a:hover {
+    color: black;
+    text-decoration: underline;
+}

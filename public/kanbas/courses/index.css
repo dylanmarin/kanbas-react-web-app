@@ -1,0 +1,85 @@
+div.wd-course-home-main-window {
+    margin-left: 85px;
+    padding-top: 15px;
+    height: 100%;
+}
+
+
+.wd-course-home-main-window button {
+    max-width: fit-content;
+    font-size: .8em;
+    margin-right: 5px;
+}
+
+.wd-course-home-main-window select {
+    max-width: fit-content;
+    margin-right: 5px;
+    font-size: .8em;
+}
+
+.wd-course-home-main-window ul.list-group {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.wd-li-heading {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+.wd-li-indent {
+    padding-left: 150px;
+}
+
+.list-group-item i.fa-ellipsis-vertical {
+    color: grey;
+}
+
+
+.list-group-item i.fa-check-circle {
+    margin-right: 10px;
+    color: green;
+}
+
+.wd-breadcrumb {
+    --bs-breadcrumb-divider: '>';
+    --bs-breadcrumb-divider-color: black;
+}
+
+
+.wd-breadcrumb a {
+    color: var(--wd-canvas-red);
+    text-decoration: none;
+}
+
+.wd-breadcrumb a:hover {
+    color: var(--wd-canvas-red);
+    text-decoration: underline;
+}
+
+
+.list-group-item a {
+    color: var(--wd-canvas-red);
+    text-decoration: none;
+}
+
+.list-group-item a:hover {
+    color: var(--wd-canvas-red);
+    text-decoration: underline;
+}
+
+
+
+.list-group-item i {
+    color: var(--wd-canvas-red);
+    margin-left: 8px;
+}
+
+.wd-course-modules {
+    min-width: 300px;
+}
+
+.wd-course-navigation col {
+    max-width: fit-content;
+}

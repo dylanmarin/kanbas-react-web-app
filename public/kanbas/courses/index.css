@@ -69,8 +69,6 @@ div.wd-course-home-main-window {
     text-decoration: underline;
 }
 
-
-
 .list-group-item i {
     color: var(--wd-canvas-red);
     margin-left: 8px;
@@ -82,4 +80,7 @@ div.wd-course-home-main-window {
 
 .wd-course-navigation col {
     max-width: fit-content;
+}
+.wd-breadcrumb-heading-container div {
+    max-width: 100%;
 }

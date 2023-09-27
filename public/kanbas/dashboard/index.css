@@ -1,0 +1,27 @@
+.wd-main-content-window h2 {
+    font-weight: lighter;
+}
+
+.wd-main-content-window {
+    margin: 20px 20px 20px 85px;
+    height: 100%;
+
+}
+
+.wd-published-courses-window {
+    margin: 0 0 0 20px;
+}
+
+
+.wd-published-courses-window h2 {
+    font-weight: normal;
+}
+
+
+.wd-published-courses-window .card {
+    width: 260px;
+    font-weight: normal;
+    margin-bottom: 35px;
+    margin-right: 35px;
+}
+

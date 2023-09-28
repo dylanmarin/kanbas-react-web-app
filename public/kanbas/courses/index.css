@@ -1,9 +1,8 @@
 div.wd-course-home-main-window {
-    margin-left: 85px;
-    padding-top: 15px;
+    margin-left: 15px;
+    padding: 15px;
     height: 100%;
 }
-
 
 .wd-course-home-main-window button {
     max-width: fit-content;
@@ -67,4 +66,8 @@ div.wd-course-home-main-window {
 
 .wd-course-navigation col {
     max-width: fit-content;
+}
+
+div.wd-spacer {
+    max-width: 85px;
 }

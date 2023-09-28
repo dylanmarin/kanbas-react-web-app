@@ -69,10 +69,6 @@ div.wd-course-home-main-window {
     max-width: fit-content;
 }
 
-div.wd-spacer {
-    max-width: 85px;
-}
-
 
 .btn-success .fa-check-circle {
     color: white;
@@ -95,4 +91,14 @@ div.wd-spacer {
 
 .fa-calendar {
     color: grey;
+}
+
+.wd-dropdown-courses-navigation a {
+    color: var(--wd-canvas-red);
+    text-decoration: none;
+}
+
+.wd-dropdown-courses-navigation a:hover {
+    color: var(--wd-canvas-red);
+    text-decoration: underline;
 }

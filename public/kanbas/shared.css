@@ -88,3 +88,30 @@ div.wd-hamburger-icon a {
 .fa-check-circle {
     color: green;
 }
+
+.wd-dropdown-main-navigation a {
+    color: var(--wd-canvas-red);
+    text-decoration: none;
+}
+
+
+.wd-dropdown-main-navigation .wd-account-icon {
+    color: grey;
+    text-decoration: none;
+}
+
+.wd-dropdown-main-navigation a:hover {
+    color: var(--wd-canvas-red);
+    text-decoration: underline;
+}
+
+
+div.wd-spacer {
+    width: 85px;
+    min-width: 85px;
+    max-width: 85px;
+}
+
+.wd-green-text {
+    color: green;
+}

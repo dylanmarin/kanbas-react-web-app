@@ -17,6 +17,9 @@ div.wd-course-home-main-window {
     font-size: .8em;
 }
 
+.wd-course-home-main-window hr {
+    max-width: 98%;
+}
 .wd-course-home-main-window ul.list-group {
     margin-bottom: 15px;
     margin-top: 15px;
@@ -42,22 +45,6 @@ div.wd-course-home-main-window {
     color: green;
 }
 
-.wd-breadcrumb {
-    --bs-breadcrumb-divider: '>';
-    --bs-breadcrumb-divider-color: black;
-}
-
-
-.wd-breadcrumb a {
-    color: var(--wd-canvas-red);
-    text-decoration: none;
-}
-
-.wd-breadcrumb a:hover {
-    color: var(--wd-canvas-red);
-    text-decoration: underline;
-}
-
 
 .list-group-item a {
     color: var(--wd-canvas-red);
@@ -80,7 +67,4 @@ div.wd-course-home-main-window {
 
 .wd-course-navigation col {
     max-width: fit-content;
-}
-.wd-breadcrumb-heading-container div {
-    max-width: 100%;
 }

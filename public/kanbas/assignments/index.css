@@ -1,0 +1,86 @@
+.wd-assigment-main-window {
+    margin-left: 110px;
+    margin-right: 25px;
+    padding-top: 15px;
+    height: 100%;
+}
+
+.wd-assigment-main-window .btn {
+    margin-right: 5px;
+    font-size: .9em;
+}
+
+.wd-assigment-main-window h4 {
+    font-weight: normal;
+}
+
+
+.wd-assigment-main-window .fa-ellipsis-vertical {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.wd-list-group-heading a {
+    text-decoration: none;
+    color: grey;
+}
+
+.wd-list-group-heading a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+
+.wd-assigment-main-window .list-group {
+    border-radius: 0;
+}
+
+li .fa-check-circle {
+    font-size: 1.4em;
+}
+
+li.wd-list-group-item .fa-ellipsis-vertical {
+    font-size: 1.4em;
+}
+
+p.wd-secondary-text {
+    font-size: .9em;
+    color: grey;
+}
+
+a.wd-assignment-heading {
+    color: black;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+
+a.wd-assignment-heading:hover {
+    color: black;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+i.fa-book {
+    color: green;
+    font-size: 1.2em;
+    position: relative;
+    top: 35%;
+}
+
+.wd-list-group-item .fa-check-circle {
+
+    position: relative;
+    top: 35%;
+}
+
+.wd-list-group-item .fa-ellipsis-vertical {
+
+    position: relative;
+    top: 35%;
+}
+
+li.wd-list-group-item {
+    border-left: forestgreen 5px solid;
+}

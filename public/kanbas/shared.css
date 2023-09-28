@@ -37,7 +37,7 @@
 }
 
 .form-control {
-    margin-bottom:10px;
+    margin-bottom: 10px;
     /*min-width: 200px;*/
     /*max-width: 500px;*/
 }
@@ -52,4 +52,39 @@ div.wd-hamburger-icon i {
 
 div.wd-hamburger-icon a {
     text-decoration: none;
+}
+
+
+.wd-breadcrumb {
+    --bs-breadcrumb-divider: '>';
+    --bs-breadcrumb-divider-color: black;
+}
+
+
+.wd-breadcrumb a {
+    color: var(--wd-canvas-red);
+    text-decoration: none;
+}
+
+.wd-breadcrumb a:hover {
+    color: var(--wd-canvas-red);
+    text-decoration: underline;
+}
+
+.wd-breadcrumb-heading-container div {
+    max-width: 100%;
+}
+
+
+.wd-rounded-corners-all-around {
+    border-radius: 60px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkgrey;
+    padding: 2px 5px;
+}
+
+
+.fa-check-circle {
+    color: green;
 }

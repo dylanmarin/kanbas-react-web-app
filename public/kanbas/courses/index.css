@@ -19,6 +19,7 @@ div.wd-course-home-main-window {
 .wd-course-home-main-window hr {
     max-width: 98%;
 }
+
 .wd-course-home-main-window ul.list-group {
     margin-bottom: 15px;
     margin-top: 15px;
@@ -70,4 +71,28 @@ div.wd-course-home-main-window {
 
 div.wd-spacer {
     max-width: 85px;
+}
+
+
+.btn-success .fa-check-circle {
+    color: white;
+}
+
+.wd-course-home-right-sidebar a {
+    color: var(--wd-canvas-red);
+    text-decoration: none;
+}
+
+.wd-course-home-right-sidebar a:hover {
+    color: var(--wd-canvas-red);
+    text-decoration: underline;
+}
+
+.wd-course-home-right-sidebar p {
+    color: grey;
+    font-size: 0.8em;
+}
+
+.fa-calendar {
+    color: grey;
 }

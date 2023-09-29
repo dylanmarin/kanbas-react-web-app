@@ -102,3 +102,34 @@ div.wd-course-home-main-window {
     color: var(--wd-canvas-red);
     text-decoration: underline;
 }
+
+a:hover.dropdown-toggle {
+    color: white;
+    text-decoration: none;
+}
+
+a.dropdown-toggle {
+    color: white;
+    text-decoration: none;
+}
+
+.wd-hidden-courses-nav {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    height: 55px;
+    width: 100%;
+    padding: 5px;
+    z-index: 10;
+    color: white;
+}
+
+
+.wd-hidden-courses-nav .dropdown-menu {
+    padding: 15px;
+}
+
+
+.wd-hidden-courses-nav-spacer {
+    height: 55px;
+}

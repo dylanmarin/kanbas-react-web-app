@@ -5,6 +5,10 @@
     <link href="/kanbas/shared.css" rel="stylesheet">
     <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+            integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/lib/bootstrap/js/bootstrap.js"></script>
     <title>Courses - Assignments</title>
 </head>
 <body>
@@ -218,7 +222,7 @@
                                     <label for="assignment-group" class="float-end">Assignment Group </label>
                                 </div>
                                 <div class="col-7">
-                                    <select id="assignment-group">
+                                    <select id="assignment-group" class="form-select form-control" >
                                         <option id="assignments">
                                             ASSIGNMENTS
                                         </option>
@@ -241,17 +245,17 @@
                                     <label for="grade-display-type" class="float-end">Display Grade as</label>
                                 </div>
                                 <div class="col-7">
-                                    <select id="grade-display-type">
+                                    <select id="grade-display-type" class="form-select form-control">
                                         <option id="percentage">Percentage</option>
                                         <option id="fraction">Fraction</option>
-                                    </select><br/><br/>
+                                    </select>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-3"></div>
                                 <div class="col-7">
-                                    <input type="checkbox"> Do not count this assignment towards the final grade
+                                    <input type="checkbox" class="mb-3"> Do not count this assignment towards the final grade
                                 </div>
                             </div>
 
@@ -261,7 +265,7 @@
                                 </div>
                                 <div class="col-7 border border-2 rounded">
 
-                                    <select id="submission-type" class="mt-2">
+                                    <select id="submission-type" class="mt-2 form-select form-control">
                                         <option id="online">Online</option>
                                         <option id="in-person">In Person</option>
                                     </select>
@@ -288,10 +292,10 @@
                                         <label for="chkbox-file-uploads">File Uploads</label> <br/><br/>
 
                                         <label for="submission-attempts">Submission attempts</label>
-                                        <select id="submission-attempts">
+                                        <select id="submission-attempts" class="form-select mb-3">
                                             <option id="unlimited">Unlimited</option>
                                             <option id="one">1 Attempt</option>
-                                        </select><br/><br/>
+                                        </select>
 
                                     </div>
 
@@ -356,8 +360,8 @@
 
                             <div>
                                 <input type="checkbox"> Notify users that this content has changed
-                            <button class="btn btn-danger float-end mx-1">Save</button>
-                            <button class="btn btn-secondary float-end mx-2">Cancel</button>
+                                <button class="btn btn-danger float-end mx-1">Save</button>
+                                <button class="btn btn-secondary float-end mx-2">Cancel</button>
 
                             </div>
 

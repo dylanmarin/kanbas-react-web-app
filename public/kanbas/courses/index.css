@@ -199,3 +199,8 @@ a.dropdown-toggle {
 .wd-course-settings-navigation .list-group {
     max-width: 550px;
 }
+
+
+.wd-course-settings-navigation .fst-italic {
+margin-left: 15px
+}

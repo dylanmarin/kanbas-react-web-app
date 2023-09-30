@@ -115,3 +115,10 @@ div.wd-spacer {
 .wd-green-text {
     color: green;
 }
+
+
+
+.wd-hamburger-icon a:hover {
+    color: var(--wd-canvas-red);
+    text-decoration: none;
+}

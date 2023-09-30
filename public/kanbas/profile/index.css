@@ -74,6 +74,11 @@
     padding: 0;
 }
 
+
+.wd-main-content-window .form-select {
+    max-width: 300px;
+}
+
 .wd-margin-top-15 {
     margin-top: 15px;
 }

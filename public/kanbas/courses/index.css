@@ -133,3 +133,69 @@ a.dropdown-toggle {
 .wd-hidden-courses-nav-spacer {
     height: 55px;
 }
+
+.wd-grades-main-window {
+    margin-left: 110px;
+    margin-right: 25px;
+    padding-top: 15px;
+}
+
+.wd-settings-main-window {
+    margin-left: 110px;
+    margin-right: 25px;
+    padding-top: 15px;
+}
+
+.wd-settings-main-window a {
+    color: var(--wd-canvas-red);
+    text-decoration: none;
+}
+
+.wd-settings-main-window a:hover {
+    color: var(--wd-canvas-red);
+    text-decoration: none;
+}
+
+
+.wd-settings-main-window .wd-course-details .col a:hover {
+    color: var(--wd-canvas-red);
+    text-decoration: underline;
+}
+
+.wd-settings-main-window .wd-course-details .col-2 {
+    min-width: 200px;
+    font-weight: normal;
+}
+
+.wd-settings-main-window .wd-course-details .wd-choose-image-border {
+    max-width: 300px;
+}
+
+.wd-course-details .row {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.wd-course-details .form-select {
+    margin-bottom: 5px;
+}
+
+
+
+.wd-course-details .form-control {
+    margin-bottom: 5px;
+    max-width: 300px;
+}
+
+
+.wd-course-details textarea.form-control {
+    max-width: 400px;
+}
+
+.wd-course-details select.form-select {
+    max-width: 400px;
+}
+
+.wd-course-settings-navigation .list-group {
+    max-width: 550px;
+}

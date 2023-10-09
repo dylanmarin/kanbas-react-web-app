@@ -1,0 +1,46 @@
+.wd-kanbas-navigation {
+    background-color: black;
+    list-style-type: none;
+    padding: 0;
+    font-family: "Helvetica", sans-serif;
+    height: 100%;
+    width: 85px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+}
+
+.wd-kanbas-navigation-spacer {
+    width: 85px;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.wd-kanbas-navigation a.list-group-item {
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 5px;
+    background-color: black;
+    border: none;
+    font-size: 0.8em;
+}
+
+.wd-account-icon {
+    color: grey;
+    font-size: 1.2em;
+}
+
+.wd-kanbas-navigation-icon {
+    color: var(--wd-canvas-red);
+    font-size: 2em;
+}
+
+.wd-kanbas-navigation a.list-group-item.active {
+    color: var(--wd-canvas-red);
+    background-color: white;
+    font-size: 0.8em;
+}

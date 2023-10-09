@@ -9,6 +9,9 @@ import House from "./House";
 import Spread from "./Spread";
 import Destructing from "./Destructing";
 import FunctionDestructing from "./FunctionDestructing";
+import PathParameters from "./PathParameters";
+import Add from "./Add";
+import {Link} from "react-router-dom";
 
 function JavaScript() {
     console.log('Hello World!');
@@ -26,6 +29,8 @@ function JavaScript() {
             <Spread/>
             <Destructing/>
             <FunctionDestructing/>
+
+
         </div>
     );
 }

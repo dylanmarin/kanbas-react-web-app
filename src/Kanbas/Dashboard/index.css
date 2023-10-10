@@ -1,0 +1,34 @@
+.card {
+    width: 260px;
+    font-weight: normal;
+    margin-bottom: 35px;
+    margin-right: 35px;
+}
+
+.card p {
+    font-size: .9em;
+    color: grey;
+}
+
+.wd-main-content-window h2 {
+    font-weight: lighter;
+}
+
+.wd-published-courses-window h2 {
+    font-weight: normal;
+}
+
+.wd-published-courses-window {
+    margin: 0 0 0 20px;
+}
+
+.wd-published-courses-window a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.wd-published-courses-window a:hover {
+    color: black;
+    text-decoration: underline;
+}

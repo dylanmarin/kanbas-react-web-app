@@ -24,7 +24,7 @@ function KanbasNavigation() {
     const {pathname} = useLocation();
     return (
         <>
-            <div className="list-group wd-kanbas-navigation rounded-0" style={{width: 85}}>
+            <div className="list-group wd-kanbas-navigation rounded-0 p-0" style={{width: 85}}>
                 <img src="/img/neu.png"></img>
                 {links.map((link, index) => (
                         <Link
@@ -39,7 +39,7 @@ function KanbasNavigation() {
                     )
                 )}
             </div>
-            <div className={"wd-kanbas-navigation-spacer"}></div>
+            <div className={"wd-kanbas-navigation-spacer col-auto"}></div>
         </>
     )
 }

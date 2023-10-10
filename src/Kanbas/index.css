@@ -1,3 +1,7 @@
 :root {
     --wd-canvas-red: #a32423;
 }
+
+.wd-main-content-window {
+    margin: 25px;
+}

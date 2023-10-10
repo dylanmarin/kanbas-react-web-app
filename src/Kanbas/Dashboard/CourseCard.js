@@ -9,7 +9,7 @@ function CourseCard({course, index}) {
 
     return (
         <Link
-            to={`/Kanbas/Courses/${name}`}
+            to={`/Kanbas/Courses/${_id}`}
             key={index}>
             <div className={"card"}>
                 <img className={"card-img-top"} src="/img/react.png" alt="Card image cap"></img>

@@ -1,17 +1,19 @@
 import db from "../../Kanbas/Database";
-import {Navigate, Route, Routes, useParams} from "react-router-dom";
+import {Navigate, Route, Routes, useLocation, useParams} from "react-router-dom";
 import CourseNavigation from "./CourseNavigation";
 import "./index.css";
 import "../index.css";
+import BreadcrumbHeader from "../BreadcrumbHeader";
 
 function Courses() {
     const {courseId} = useParams();
     const course = db.courses.find((course) => course._id === courseId);
+
     return (
         <div className={"wd-main-content-window"}>
-            <h1>Course {course.name}</h1>
-
+            <BreadcrumbHeader/>
             <CourseNavigation/>
+            <h1>Course {course.name}</h1>
             <div>
                 <div
                     className="overflow-y-scroll position-fixed bottom-0 end-0"
@@ -21,7 +23,7 @@ function Courses() {
                     }}
                 >
                     <Routes>
-                        <Route path="/" element={<Navigate to="Home"/>}/>
+                        <Route path="/" element=<Navigate to="Home"/>/>
                         <Route path="Home" element={<h1>Home</h1>}/>
                         <Route path="Modules" element={<h1>Modules</h1>}/>
                         <Route path="Assignments" element={<h1>Assignments</h1>}/>

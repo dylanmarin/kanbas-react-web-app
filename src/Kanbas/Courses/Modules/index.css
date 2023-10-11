@@ -17,6 +17,7 @@
     color: var(--wd-canvas-red);
     text-decoration: underline;
 }
+
 .wd-module-sub-heading {
     font-weight: bold;
 }
@@ -25,6 +26,8 @@
     margin-top: 16px;
 }
 
-.btn {
-    margin-right: 10px;
+.wd-modules-heading-bar .btn {
+    margin-left: 5px !important;
+    max-width: fit-content !important;
+    font-size: .8em !important;
 }

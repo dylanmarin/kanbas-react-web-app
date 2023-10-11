@@ -10,7 +10,6 @@ function ModuleList() {
     const modules = db.modules;
     return (
         <div className="wd-course-modules">
-
             {
                 modules
                     .filter((module) => module.course === courseId)

@@ -5,6 +5,7 @@ import "./index.css";
 import "../index.css";
 import BreadcrumbHeader from "../BreadcrumbHeader";
 import Modules from "./Modules";
+import Home from "./Home";
 
 function Courses() {
     const {courseId} = useParams();
@@ -18,8 +19,7 @@ function Courses() {
                 <div className={"col"}>
                     <Routes>
                         <Route path="/" element={<Navigate to="Home"/>}/>
-
-                        <Route path="Home" element={<h1>Home</h1>}/>
+                        <Route path="Home" element={<Home/>}/>
                         <Route path="Modules" element={<Modules/>}/>
                         <Route path="Piazza" element={<h1>Piazza</h1>}/>
                         <Route path="Zoom Meetings" element={<h1>Zoom Meetings</h1>}/>

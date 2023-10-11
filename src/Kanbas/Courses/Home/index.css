@@ -1,0 +1,25 @@
+
+.wd-course-home-right-sidebar a {
+    color: var(--wd-canvas-red);
+    text-decoration: none;
+}
+
+.wd-course-home-right-sidebar a:hover {
+    color: var(--wd-canvas-red);
+    text-decoration: underline;
+}
+
+.wd-course-home-right-sidebar p {
+    color: grey;
+    font-size: 0.8em;
+}
+
+.wd-calendar-icon {
+    color: grey;
+}
+
+.wd-course-home-right-sidebar button {
+    max-width: fit-content;
+    font-size: .8em;
+    margin-right: 5px;
+}

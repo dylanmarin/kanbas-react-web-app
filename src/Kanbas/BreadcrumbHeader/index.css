@@ -1,8 +1,11 @@
 
 div.wd-hamburger-icon {
-    margin-right: 15px;
-    margin-top: 15px;
+    margin-left: 10px;
+    padding-right: 0;
     max-width: fit-content;
+    color: var(--wd-canvas-red);
+    font-size: 1.5em;
+
 
 }
 

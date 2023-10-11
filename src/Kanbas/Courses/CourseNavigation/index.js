@@ -6,11 +6,10 @@ function CourseNavigation() {
     const {courseId} = useParams();
     const {pathname} = useLocation();
     return (
-        <ul className="wd-secondary-navigation">
+        <ul className="col-auto wd-secondary-navigation">
             {links.map((link, index) => (
-                <li>
+                <li key={index}>
                     <Link
-                        key={index}
                         to={`/Kanbas/Courses/${courseId}/${link}`}
                         className={`list-group-item ${pathname.includes(link.replace(" ", "%20")) && "active"}`}>
                         {link}

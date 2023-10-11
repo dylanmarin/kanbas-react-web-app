@@ -1,7 +1,7 @@
 import "./index.css";
-import {FaBars} from "react-icons/fa";
 import {Link, useLocation, useParams} from "react-router-dom";
 import db from "../Database";
+import {RxHamburgerMenu} from "react-icons/rx";
 
 function BreadcrumbHeader() {
     const {courseId} = useParams();
@@ -14,7 +14,7 @@ function BreadcrumbHeader() {
     return (
         <div className="row wd-breadcrumb-heading-container">
             <div className="col-auto wd-hamburger-icon">
-                <FaBars/>
+                <RxHamburgerMenu/>
             </div>
             <div className="col float-start">
                 <nav className="wd-breadcrumb" aria-label="breadcrumb">
@@ -27,10 +27,9 @@ function BreadcrumbHeader() {
 
                             link = `${link}/${pathPart}`
                             return (
-                                <li className="breadcrumb-item">
+                                <li key={index} className="breadcrumb-item">
                                     <Link
-                                        to={link}
-                                        key={index}>
+                                        to={link}>
                                         {pathPartToDisplay}
                                     </Link>
                                 </li>

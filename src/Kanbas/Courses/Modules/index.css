@@ -1,0 +1,30 @@
+
+.wd-li-heading {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.wd-module-sub-item {
+    padding-left: 40px !important;
+}
+
+.wd-module-sub-item a {
+    color: var(--wd-canvas-red);
+    text-decoration: none;
+}
+
+.wd-module-sub-item a:hover {
+    color: var(--wd-canvas-red);
+    text-decoration: underline;
+}
+.wd-module-sub-heading {
+    font-weight: bold;
+}
+
+.list-group {
+    margin-top: 16px;
+}
+
+.btn {
+    margin-right: 10px;
+}

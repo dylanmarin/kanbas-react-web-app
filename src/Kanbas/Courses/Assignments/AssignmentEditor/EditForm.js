@@ -7,7 +7,7 @@ function EditForm({assignment}) {
         <h4>Assignment Name</h4>
 
         <input value={assignment.title}
-               className="form-control mb-2"/>
+               className="form-control mb-2 wd-200-width"/>
         <textarea cols="50" rows="5" className="form-control">This is the assignment description here. Eventually fetch from DB</textarea><br/><br/>
 
         <div className="row">
@@ -15,8 +15,8 @@ function EditForm({assignment}) {
                 <label className="float-end">Points </label>
             </div>
             <div className="col-7">
-                <input id="points" type="number" placeholder="Points" value="100" max="100" min="0"
-                       className="form-control"/>
+                <input id="points" type="number" placeholder="Points" value={assignment.points} max="100" min="0"
+                       className="form-control wd-200-width"/>
             </div>
         </div>
 
@@ -47,7 +47,7 @@ function EditForm({assignment}) {
                 <label className="float-end">Display Grade as</label>
             </div>
             <div className="col-7">
-                <select id="grade-display-type" className="form-select form-control">
+                <select id="grade-display-type" className="form-select form-control ">
                     <option id="percentage">Percentage</option>
                     <option id="fraction">Fraction</option>
                 </select>

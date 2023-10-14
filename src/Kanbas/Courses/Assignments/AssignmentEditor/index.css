@@ -5,10 +5,9 @@
     padding-top: 15px;
 }
 
-.row input.form-control {
-    max-width: 200px;
+.wd-200-width {
+    max-width: 200px !important;
 }
-
 
 .form-control {
     margin-bottom: 10px;

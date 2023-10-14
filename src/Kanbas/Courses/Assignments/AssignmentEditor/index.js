@@ -27,9 +27,7 @@ function AssignmentEditor() {
 
             <hr/>
 
-
             <EditForm assignment={assignment}/>
-
 
             <div>
                 <hr/>

@@ -1,0 +1,17 @@
+td a {
+    color: var(--wd-canvas-red) !important;
+}
+
+td a:hover {
+    color: var(--wd-canvas-red) !important;
+    text-decoration: underline !important;
+}
+
+
+a.wd-canvas-red {
+    text-decoration: none;
+}
+
+a.wd-canvas-red {
+    text-decoration: underline;
+}

@@ -5,3 +5,7 @@
 .wd-main-content-window {
     margin: 25px;
 }
+
+.wd-canvas-red {
+    color: var(--wd-canvas-red);
+}

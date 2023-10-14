@@ -5,25 +5,26 @@ import SearchbarSubHeader from "./SearchbarSubHeader"
 import AssignmentGroupHeading from "./AssignmentGroupHeading";
 import AssignmentListItem from "./AssignmentListItem";
 
+const assignmentTypes = ["assignment", "quiz", "exam", "project"]
+const assignmentTypeToWeightMap = {
+    assignment: 40,
+    quiz: 10,
+    exam: 20,
+    project: 30
+}
+const assignmentTypeToHeaderStringMap = {
+    assignment: "ASSIGNMENTS",
+    quiz: "QUIZZES",
+    exam: "EXAMS",
+    project: "PROJECT"
+}
+
+
 function Assignments() {
     const {courseId} = useParams();
     const assignments = db.assignments;
     const courseAssignments = assignments.filter(
         (assignment) => assignment.course === courseId);
-
-    const assignmentTypes = ["assignment", "quiz", "exam", "project"]
-    const assignmentTypeToWeightMap = {
-        assignment: 40,
-        quiz: 10,
-        exam: 20,
-        project: 30
-    }
-    const assignmentTypeToHeaderStringMap = {
-        assignment: "ASSIGNMENTS",
-        quiz: "QUIZZES",
-        exam: "EXAMS",
-        project: "PROJECT"
-    }
 
 
     return (

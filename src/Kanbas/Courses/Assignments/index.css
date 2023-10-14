@@ -1,0 +1,42 @@
+div.wd-subheading-bar .btn {
+    margin-left: 5px;
+    max-width: fit-content;
+    font-size: .8em;
+}
+
+.wd-ellipses-grey-button.btn {
+    font-size: 1em !important;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.wd-assignment-group-heading a {
+    color: grey;
+}
+
+.wd-assignment-group-heading a:hover {
+    color: darkgrey;
+}
+
+.wd-green {
+    color: green;
+}
+
+
+.wd-assignment-heading {
+    color: black;
+    font-weight: bolder;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.wd-list-group-item {
+    border-left: forestgreen 5px solid;
+}
+
+.wd-assignment-heading:hover {
+    color: black;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 1.2em;
+}

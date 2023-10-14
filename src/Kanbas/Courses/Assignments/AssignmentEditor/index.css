@@ -1,0 +1,21 @@
+
+.wd-edit-assignment-main-window {
+    margin-left: 110px;
+    margin-right: 25px;
+    padding-top: 15px;
+}
+
+.row input.form-control {
+    max-width: 200px;
+}
+
+
+.form-control {
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+.wd-height-80 {
+    height: 80px;
+}
+

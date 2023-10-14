@@ -1,0 +1,93 @@
+[
+  {
+    "_id": "A101",
+    "title": "Propulsion Assignment",
+    "course": "RS101",
+    "type": "assignment",
+    "points": 100
+  },
+  {
+    "_id": "A102",
+    "title": "Combustion Analysis",
+    "course": "RS101",
+    "type": "assignment",
+    "points": 100
+  },
+  {
+    "_id": "A103",
+    "title": "Nozzle Design Project",
+    "course": "RS101",
+    "type": "assignment",
+    "points": 100
+  },
+  {
+    "_id": "A104",
+    "title": "Propulsion Quiz 1",
+    "course": "RS101",
+    "type": "quiz",
+    "points": 10
+  },
+  {
+    "_id": "A105",
+    "title": "Propulsion Quiz 2",
+    "course": "RS101",
+    "type": "quiz",
+    "points": 12
+  },
+  {
+    "_id": "A106",
+    "title": "Final Exam",
+    "course": "RS101",
+    "type": "exam",
+    "points": 250
+  },
+  {
+    "_id": "A107",
+    "title": "Final Project",
+    "course": "RS101",
+    "type": "project",
+    "points": 600
+  },
+  {
+    "_id": "A201",
+    "title": "Aerodynamics Quiz",
+    "course": "RS102",
+    "type": "assignment",
+    "points": 100
+  },
+  {
+    "_id": "A202",
+    "title": "Flow Analysis",
+    "course": "RS102",
+    "type": "assignment",
+    "points": 100
+  },
+  {
+    "_id": "A203",
+    "title": "Heating Analysis",
+    "course": "RS102",
+    "type": "assignment",
+    "points": 100
+  },
+  {
+    "_id": "A301",
+    "title": "Structural Design Task",
+    "course": "RS103",
+    "type": "assignment",
+    "points": 100
+  },
+  {
+    "_id": "A302",
+    "title": "Orbital Calculations",
+    "course": "RS103",
+    "type": "assignment",
+    "points": 100
+  },
+  {
+    "_id": "A303",
+    "title": "Systems Engineering Exam",
+    "course": "RS103",
+    "type": "assignment",
+    "points": 100
+  }
+]

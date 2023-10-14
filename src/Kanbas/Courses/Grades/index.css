@@ -12,6 +12,6 @@ a.wd-canvas-red {
     text-decoration: none;
 }
 
-a.wd-canvas-red {
+a.wd-canvas-red:hover {
     text-decoration: underline;
 }

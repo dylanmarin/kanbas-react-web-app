@@ -78,19 +78,19 @@ function EditForm({assignment}) {
 
 
                     <input type="checkbox" value="TEXT-ENTRY"
-                           name="text-entry" id="chkbox-text-entry" checked/>
+                           name="text-entry" id="chkbox-text-entry" className={"me-1"} checked/>
                     <label>Text Entry</label> <br/>
                     <input type="checkbox" value="WEBSITE"
-                           name="website-url" id="chkbox-website-url" checked/>
+                           name="website-url" id="chkbox-website-url" className={"me-1"} checked/>
                     <label>Website URL</label> <br/>
                     <input type="checkbox" value="MEDIA"
-                           name="website-url" id="chkbox-media-recordings" checked/>
+                           name="website-url" id="chkbox-media-recordings" className={"me-1"} checked/>
                     <label>Media Recordings</label> <br/>
                     <input type="checkbox" value="ANNOTATION"
-                           name="student-annotation" id="chkbox-student-annotation"/>
+                           name="student-annotation" id="chkbox-student-annotation" className={"me-1"}/>
                     <label>Student Annotation</label> <br/>
                     <input type="checkbox" value="FILE-UPLOADS"
-                           name="student-file-uploads" id="chkbox-file-uploads"/>
+                           name="student-file-uploads" id="chkbox-file-uploads" className={"me-1"}/>
                     <label>File Uploads</label> <br/><br/>
 
                     <label>Submission attempts</label>

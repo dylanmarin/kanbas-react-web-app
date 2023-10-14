@@ -61,7 +61,7 @@ function Grades() {
                                 return (
                                     <td>
                                         {<input
-                                            value={`${grade?.grade}%` || ""}
+                                            value={grade?.grade ? `${grade?.grade}%` : "00.00%"}
                                             placeholder={"0%"}
                                             className={"form-control text-center"}
                                         />}

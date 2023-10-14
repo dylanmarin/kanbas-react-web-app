@@ -24,23 +24,26 @@ function KanbasNavigation() {
     const {pathname} = useLocation();
     return (
         <>
-            <div className="list-group wd-kanbas-navigation rounded-0 p-0" style={{width: 85}}>
-                <img src="/img/neu.png"></img>
-                {links.map((link, index) => (
-                        <Link
-                            key={index}
-                            to={`/Kanbas/${link}`}
-                            className={`list-group-item ${pathname.includes(link) && "active"}`}>
-                            <div className={"wd-kanbas-navigation-icon"}>
-                                {linksToIconsMap[link]}
-                            </div>
-                            {link}
-                        </Link>
-                    )
-                )}
+            <div className={"d-none d-md-none d-lg-block"}>
+                <div className="list-group wd-kanbas-navigation rounded-0 p-0 mt-0" style={{width: 85}}>
+                    <img src="/img/neu.png"></img>
+                    {links.map((link, index) => (
+                            <Link
+                                key={index}
+                                to={`/Kanbas/${link}`}
+                                className={`list-group-item ${pathname.includes(link) && "active"}`}>
+                                <div className={"wd-kanbas-navigation-icon"}>
+                                    {linksToIconsMap[link]}
+                                </div>
+                                {link}
+                            </Link>
+                        )
+                    )}
+                </div>
             </div>
-            <div className={"wd-kanbas-navigation-spacer col-auto"}></div>
+            <div className={"wd-kanbas-navigation-spacer col-auto d-none d-md-none d-lg-block"}></div>
         </>
+
     )
 }
 

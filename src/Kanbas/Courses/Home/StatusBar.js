@@ -3,8 +3,7 @@ import {FaBan, FaBell, FaBullhorn, FaBullseye, FaCalendar, FaCheckCircle, FaFile
 import {FaChartSimple, FaCircleRight} from "react-icons/fa6";
 
 function StatusBar() {
-    return (<div className="col-3 wd-course-home-right-sidebar">
-            {/*d-none d-lg-none d-xl-block*/}
+    return (<div className="col-3 wd-course-home-right-sidebar d-none d-lg-none d-xl-block">
             <h4>Course Status</h4>
 
             <button className="btn btn-secondary"><FaBan/> Unpublish</button>

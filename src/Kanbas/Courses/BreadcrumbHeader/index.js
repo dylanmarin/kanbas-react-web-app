@@ -1,6 +1,6 @@
 import "./index.css";
 import {Link, useLocation, useParams} from "react-router-dom";
-import db from "../Database";
+import db from "../../Database";
 import {RxHamburgerMenu} from "react-icons/rx";
 
 function BreadcrumbHeader() {

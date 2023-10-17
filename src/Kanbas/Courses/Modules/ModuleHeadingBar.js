@@ -11,7 +11,7 @@ function ModuleHeadingBar() {
                 <button className="btn btn-secondary">View Progress</button>
 
                 <div className="dropdown">
-                    <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    <button className="btn btn-secondary dropdown-toggle mt-0" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                         Publish All
                     </button>

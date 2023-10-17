@@ -62,3 +62,23 @@ a.btn.dropdown-toggle {
     color: white !important;
 }
 
+
+.wd-hidden-courses-nav a {
+    color: var(--wd-canvas-red);
+    text-decoration: none;
+}
+
+
+.wd-hidden-courses-nav .wd-account-icon {
+    color: grey;
+    text-decoration: none;
+}
+
+.wd-hidden-courses-nav a:hover {
+    color: var(--wd-canvas-red);
+    text-decoration: underline;
+}
+
+.btn.dropdown-toggle {
+    margin-top: 5px;
+}

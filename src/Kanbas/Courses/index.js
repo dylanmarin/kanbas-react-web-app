@@ -3,7 +3,7 @@ import {Navigate, Route, Routes, useLocation, useParams} from "react-router-dom"
 import CourseNavigation from "./CourseNavigation";
 import "./index.css";
 import "../index.css";
-import BreadcrumbHeader from "../BreadcrumbHeader";
+import BreadcrumbHeader from "./BreadcrumbHeader";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";

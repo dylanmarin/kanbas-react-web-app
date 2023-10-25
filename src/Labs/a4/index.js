@@ -10,7 +10,7 @@ import DateStateVariable from "./DateStateVariable";
 import ObjectStateVariable from "./ObjectStateVariable";
 import ArrayStateVariable from "./ArrayStateVariable";
 import ParentStateComponent from "./ParentStateComponent";
-import ChildStateComponent from "./ChildStateComponent";
+import ReduxExamples from "./ReduxExamples";
 
 function Assignment4() {
 
@@ -22,6 +22,7 @@ function Assignment4() {
     return (
         <div>
             <h1>Assignment 4</h1>
+            <ReduxExamples/>
             <ParentStateComponent/>
             <ArrayStateVariable/>
             <ObjectStateVariable/>

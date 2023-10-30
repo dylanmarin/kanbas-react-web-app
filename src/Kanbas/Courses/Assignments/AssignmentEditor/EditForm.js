@@ -5,21 +5,30 @@ import {useDispatch, useSelector} from "react-redux";
 
 
 function EditForm() {
+    {/*redux update text field with reducer*/}
     const dispatch = useDispatch();
 
     const assignment = useSelector((state) => state.assignmentsReducer.assignment);
 
+    const [title, setTitle] = React.useState(assignment.title);
+
+    console.log("edit form: " + assignment.title)
+
     return (<div>
         <h4>Assignment Name</h4>
+
         <input
             className="form-control mb-2 wd-200-width"
             onChange={(e) => {
                 // dispatch(setAssignmentTitle(e.target.value))
+
                 dispatch(setAssignment({...assignment, title: e.target.value}))
+
                 console.log(assignment.title, e.target.value)
             }
             }
             value={assignment.title}
+            type="text"
         />
 
         <textarea

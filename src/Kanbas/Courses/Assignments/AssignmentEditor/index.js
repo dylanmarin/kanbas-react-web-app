@@ -1,10 +1,10 @@
 import React from "react";
 import {useNavigate, useParams, Link} from "react-router-dom";
-import db from "../../../Database";
 import {FaEllipsisVertical} from "react-icons/fa6";
-import "../index.css"
 import {FaCheckCircle} from "react-icons/fa";
 import EditForm from "./EditForm";
+import "../index.css"
+
 import {
     addAssignment,
     setAssignment,
@@ -18,17 +18,15 @@ function AssignmentEditor() {
 
     const navigate = useNavigate();
 
+    const assignments = useSelector((state) => state.assignmentsReducer.assignments);
     const assignment = useSelector((state) => state.assignmentsReducer.assignment);
-
-    const assignmentToSet = db.assignments.find(
-        (assignment) => assignment._id === assignmentId);
 
     const dispatch = useDispatch();
 
-    if (assignmentToSet !== undefined) {
-        dispatch(setAssignment(assignmentToSet));
-    } else {
+    if (assignmentId === "NewAssignment") {
         dispatch(setDefaultAssignment());
+    } else {
+        dispatch(setAssignment(assignments.find((assignment) => assignment._id === assignmentId)));
     }
 
     const handleSave = () => {

@@ -1,18 +1,13 @@
 import React from "react";
 import "./index.css"
-import {setAssignment, setAssignmentTitle} from "../assignmentsReducer";
+import {setAssignment} from "../assignmentsReducer";
 import {useDispatch, useSelector} from "react-redux";
 
 
 function EditForm() {
-    {/*redux update text field with reducer*/}
     const dispatch = useDispatch();
 
     const assignment = useSelector((state) => state.assignmentsReducer.assignment);
-
-    const [title, setTitle] = React.useState(assignment.title);
-
-    console.log("edit form: " + assignment.title)
 
     return (<div>
         <h4>Assignment Name</h4>
@@ -20,13 +15,8 @@ function EditForm() {
         <input
             className="form-control mb-2 wd-200-width"
             onChange={(e) => {
-                // dispatch(setAssignmentTitle(e.target.value))
-
                 dispatch(setAssignment({...assignment, title: e.target.value}))
-
-                console.log(assignment.title, e.target.value)
-            }
-            }
+            }}
             value={assignment.title}
             type="text"
         />
@@ -36,8 +26,9 @@ function EditForm() {
             className="form-control"
             onChange={(e) => {
                 dispatch(setAssignment({...assignment, description: e.target.value}))
-            }}>
-            {assignment.description}
+            }}
+            value={assignment.description}>
+
                 </textarea><br/><br/>
 
         <div className="row">

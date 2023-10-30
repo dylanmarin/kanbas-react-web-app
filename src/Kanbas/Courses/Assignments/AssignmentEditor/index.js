@@ -7,10 +7,11 @@ import "../index.css"
 
 import {
     addAssignment,
-    setAssignment,
+    setAssignment, setAssignmentTitle,
     setDefaultAssignment, updateAssignment
 } from "../assignmentsReducer";
 import {useSelector, useDispatch} from "react-redux";
+import {wait} from "@testing-library/user-event/dist/utils";
 
 function AssignmentEditor() {
     const {courseId} = useParams();
@@ -23,15 +24,13 @@ function AssignmentEditor() {
 
     const dispatch = useDispatch();
 
-    if (assignmentId === "NewAssignment") {
-        dispatch(setDefaultAssignment());
-    } else {
+    if (assignmentId !== "NewAssignment") {
         dispatch(setAssignment(assignments.find((assignment) => assignment._id === assignmentId)));
     }
 
     const handleSave = () => {
         if (assignmentId === "NewAssignment") {
-            dispatch(addAssignment({...assignment, course: courseId, id: Date.now()}));
+            dispatch(addAssignment({...assignment, course: courseId}));
         } else {
             dispatch(updateAssignment(assignment));
         }

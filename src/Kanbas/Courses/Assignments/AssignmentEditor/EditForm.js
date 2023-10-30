@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css"
-import {setAssignment} from "../assignmentsReducer";
+import {setAssignment, setAssignmentTitle} from "../assignmentsReducer";
 import {useDispatch, useSelector} from "react-redux";
 
 
@@ -13,7 +13,12 @@ function EditForm() {
         <h4>Assignment Name</h4>
         <input
             className="form-control mb-2 wd-200-width"
-            onChange={(e) => dispatch(setAssignment({...assignment, title: e.target.value}))}
+            onChange={(e) => {
+                // dispatch(setAssignmentTitle(e.target.value))
+                dispatch(setAssignment({...assignment, title: e.target.value}))
+                console.log(assignment.title, e.target.value)
+            }
+            }
             value={assignment.title}
         />
 

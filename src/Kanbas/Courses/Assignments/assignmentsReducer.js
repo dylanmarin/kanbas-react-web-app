@@ -5,7 +5,7 @@ const initialState = {
     assignments: db.assignments,
     assignment: {
         "title": "New Assignment",
-        "description": "This is the assignment description here. Eventually fetch from DB",
+        "description": "Default Description",
         "type": "assignment",
         "points": 100,
         "dueDate": "2023-01-15",
@@ -44,6 +44,9 @@ const assignmentsSlice = createSlice({
             setAssignment: (state, action) => {
                 state.assignment = action.payload;
             },
+            setAssignmentTitle: (state, action) => {
+                state.assignment.title = action.payload;
+            }
         },
     })
 ;
@@ -52,6 +55,6 @@ const assignmentsSlice = createSlice({
 export const {
     addAssignment, deleteAssignment,
     updateAssignment, setAssignment,
-    setDefaultAssignment
+    setDefaultAssignment, setAssignmentTitle
 } = assignmentsSlice.actions;
 export default assignmentsSlice.reducer;

@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import {Link, useParams} from "react-router-dom";
-import db from "../../Database";
 import "./index.css";
 import {FaUpRightFromSquare} from "react-icons/fa6";
 import {useSelector, useDispatch} from "react-redux";
@@ -23,7 +22,7 @@ function ModuleList() {
                 <li className="list-group-item">
                     <input className={"form-control"}
                            value={module.name}
-                           onChange={(e) => dispatch(setModule({...module, name: e.target.value}))}
+                           onChange={(e) => dispatch(updateModule({...module, name: e.target.value}))}
                     />
                     <textarea className={"form-control"} value={module.description}
                               onChange={(e) => dispatch(setModule({...module, description: e.target.value}))}

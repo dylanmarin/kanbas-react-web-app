@@ -5,17 +5,41 @@ import {FaEllipsisVertical} from "react-icons/fa6";
 import "../index.css"
 import {FaCheckCircle} from "react-icons/fa";
 import EditForm from "./EditForm";
+import {
+    addAssignment,
+    setAssignment,
+    setDefaultAssignment, updateAssignment
+} from "../assignmentsReducer";
+import {useSelector, useDispatch} from "react-redux";
 
 function AssignmentEditor() {
-    const {assignmentId} = useParams();
-    const assignment = db.assignments.find(
-        (assignment) => assignment._id === assignmentId);
     const {courseId} = useParams();
+    const {assignmentId} = useParams();
+
     const navigate = useNavigate();
+
+    const assignment = useSelector((state) => state.assignmentsReducer.assignment);
+
+    const assignmentToSet = db.assignments.find(
+        (assignment) => assignment._id === assignmentId);
+
+    const dispatch = useDispatch();
+
+    if (assignmentToSet !== undefined) {
+        dispatch(setAssignment(assignmentToSet));
+    } else {
+        dispatch(setDefaultAssignment());
+    }
+
     const handleSave = () => {
-        console.log("Actually saving assignment TBD in later assignments");
+        if (assignmentId === "NewAssignment") {
+            dispatch(addAssignment({...assignment, course: courseId, id: Date.now()}));
+        } else {
+            dispatch(updateAssignment(assignment));
+        }
         navigate(`/Kanbas/Courses/${courseId}/Assignments`);
     };
+
     return (
         <div className={"d-flex flex-column"}>
             <div>
@@ -26,8 +50,7 @@ function AssignmentEditor() {
             </div>
 
             <hr/>
-
-            <EditForm assignment={assignment}/>
+            <EditForm/>
 
             <div>
                 <hr/>

@@ -1,9 +1,9 @@
 import React from "react";
 import {Link, useParams} from "react-router-dom";
-import db from "../../Database";
 import SearchbarSubHeader from "./SearchbarSubHeader"
 import AssignmentGroupHeading from "./AssignmentGroupHeading";
 import AssignmentListItem from "./AssignmentListItem";
+import {useSelector} from "react-redux";
 
 const assignmentTypes = ["assignment", "quiz", "exam", "project"]
 const assignmentTypeToWeightMap = {
@@ -22,10 +22,8 @@ const assignmentTypeToHeaderStringMap = {
 
 function Assignments() {
     const {courseId} = useParams();
-    const assignments = db.assignments;
-    const courseAssignments = assignments.filter(
-        (assignment) => assignment.course === courseId);
 
+    const assignments = useSelector((state) => state.assignmentsReducer.assignments);
 
     return (
         <div>
@@ -36,12 +34,14 @@ function Assignments() {
                     <AssignmentGroupHeading type={assignmentTypeToHeaderStringMap[assignmentType]}
                                             weight={`${assignmentTypeToWeightMap[assignmentType]}%`}/>
 
-                    {courseAssignments.filter((assignment) => assignmentType === assignment.type).map((assignment) => (
-                        <AssignmentListItem assignmentTitle={assignment.title}
-                                            link={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
-                                            key={assignment._id}
-                                            points={assignment.points}/>
-                    ))}
+                    {assignments
+                        .filter((assignment) => assignment.course === courseId)
+                        .filter((assignment) => assignmentType === assignment.type)
+                        .map((assignment) => (
+                            <AssignmentListItem assignment={assignment}
+                                                link={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
+                                                key={assignment._id}/>
+                        ))}
                 </div>
             ))}
 

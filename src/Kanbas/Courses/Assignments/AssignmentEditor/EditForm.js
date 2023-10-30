@@ -1,14 +1,30 @@
 import React from "react";
 import "./index.css"
+import {setAssignment} from "../assignmentsReducer";
+import {useDispatch, useSelector} from "react-redux";
 
 
-function EditForm({assignment}) {
+function EditForm() {
+    const dispatch = useDispatch();
+
+    const assignment = useSelector((state) => state.assignmentsReducer.assignment);
+
     return (<div>
         <h4>Assignment Name</h4>
+        <input
+            className="form-control mb-2 wd-200-width"
+            onChange={(e) => dispatch(setAssignment({...assignment, title: e.target.value}))}
+            value={assignment.title}
+        />
 
-        <input value={assignment.title}
-               className="form-control mb-2 wd-200-width"/>
-        <textarea cols="50" rows="5" className="form-control">This is the assignment description here. Eventually fetch from DB</textarea><br/><br/>
+        <textarea
+            cols="50" rows="5"
+            className="form-control"
+            onChange={(e) => {
+                dispatch(setAssignment({...assignment, description: e.target.value}))
+            }}>
+            {assignment.description}
+                </textarea><br/><br/>
 
         <div className="row">
             <div className="col-3">
@@ -116,22 +132,33 @@ function EditForm({assignment}) {
                        name="assign-to" id="assign-to" className="form-control"/>
 
                 <h6><label>Due</label> <br/></h6>
-                <input type="date" value="2024-01-01"
-                       name="due-date" id="due-date" className="form-control"/>
+                <input type="date" value={assignment.dueDate}
+                       name="due-date" id="due-date" className="form-control"
+                       onChange={(e) => {
+                           dispatch(setAssignment({...assignment, dueDate: e.target.value}))
+                       }}
+                />
 
                 <div className="row">
                     <div className="col wd-height-80">
 
                         <h6><label>Available from</label></h6>
-                        <input type="date" value="2024-01-01"
-                               name="available-from" id="available-from" className="form-control"/>
+                        <input type="date" value={assignment.availableFromDate}
+                               name="available-from" id="available-from" className="form-control"
+                               onChange={(e) => {
+                                   dispatch(setAssignment({...assignment, availableFromDate: e.target.value}))
+                               }}/>
 
                     </div>
                     <div className="col wd-height-80">
                         <h6><label>Until</label></h6>
                         <input type="date"
-                               name="until" id="until" className="form-control"/><br/><br/>
-
+                               name="until" id="until" value={assignment.availableUntilDate}
+                               className="form-control"
+                               onChange={(e) => {
+                                   dispatch(setAssignment({...assignment, availableUntilDate: e.target.value}))
+                               }}
+                        /><br/><br/>
                     </div>
                 </div>
                 <div className="row">

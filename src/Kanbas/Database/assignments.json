@@ -4,90 +4,142 @@
     "title": "Propulsion Assignment",
     "course": "RS101",
     "type": "assignment",
-    "points": 100
+    "description": "This assignment is about propulsion.",
+    "points": 100,
+    "dueDate": "2023-01-15",
+    "availableFromDate": "2023-01-01",
+    "availableUntilDate": "2023-01-15"
   },
   {
     "_id": "A102",
     "title": "Combustion Analysis",
     "course": "RS101",
     "type": "assignment",
-    "points": 100
+    "description": "This assignment is about combustion analysis.",
+    "points": 100,
+    "dueDate": "2023-01-15",
+    "availableFromDate": "2023-01-01",
+    "availableUntilDate": "2023-01-15"
   },
   {
     "_id": "A103",
     "title": "Nozzle Design Project",
     "course": "RS101",
     "type": "assignment",
-    "points": 100
+    "description": "This assignment is about nozzle design.",
+    "points": 100,
+    "dueDate": "2023-01-15",
+    "availableFromDate": "2023-01-01",
+    "availableUntilDate": "2023-01-15"
   },
   {
     "_id": "A104",
     "title": "Propulsion Quiz 1",
     "course": "RS101",
     "type": "quiz",
-    "points": 10
+    "description": "This quiz is about propulsion.",
+    "points": 10,
+    "dueDate": "2023-01-15",
+    "availableFromDate": "2023-01-01",
+    "availableUntilDate": "2023-01-15"
   },
   {
     "_id": "A105",
     "title": "Propulsion Quiz 2",
     "course": "RS101",
     "type": "quiz",
-    "points": 12
+    "description": "This quiz is about propulsion.",
+    "points": 12,
+    "dueDate": "2023-01-15",
+    "availableFromDate": "2023-01-01",
+    "availableUntilDate": "2023-01-15"
   },
   {
     "_id": "A106",
     "title": "Final Exam",
     "course": "RS101",
     "type": "exam",
-    "points": 250
+    "description": "This exam is about propulsion.",
+    "points": 250,
+    "dueDate": "2023-01-15",
+    "availableFromDate": "2023-01-01",
+    "availableUntilDate": "2023-01-15"
   },
   {
     "_id": "A107",
     "title": "Final Project",
     "course": "RS101",
     "type": "project",
-    "points": 600
+    "description": "This project is about propulsion.",
+    "points": 600,
+    "dueDate": "2023-01-15",
+    "availableFromDate": "2023-01-01",
+    "availableUntilDate": "2023-01-15"
   },
   {
     "_id": "A201",
     "title": "Aerodynamics Quiz",
     "course": "RS102",
     "type": "assignment",
-    "points": 100
+    "description": "This quiz is about aerodynamics.",
+    "points": 100,
+    "dueDate": "2023-01-15",
+    "availableFromDate": "2023-01-01",
+    "availableUntilDate": "2023-01-15"
   },
   {
     "_id": "A202",
     "title": "Flow Analysis",
     "course": "RS102",
     "type": "assignment",
-    "points": 100
+    "description": "This assignment is about flow analysis.",
+    "points": 100,
+    "dueDate": "2023-01-15",
+    "availableFromDate": "2023-01-01",
+    "availableUntilDate": "2023-01-15"
   },
   {
     "_id": "A203",
     "title": "Heating Analysis",
     "course": "RS102",
     "type": "assignment",
-    "points": 100
+    "description": "This assignment is about heating analysis.",
+    "points": 100,
+    "dueDate": "2023-01-15",
+    "availableFromDate": "2023-01-01",
+    "availableUntilDate": "2023-01-15"
   },
   {
     "_id": "A301",
     "title": "Structural Design Task",
     "course": "RS103",
     "type": "assignment",
-    "points": 100
+    "description": "This assignment is about structural design.",
+    "points": 100,
+    "dueDate": "2023-01-15",
+    "availableFromDate": "2023-01-01",
+    "availableUntilDate": "2023-01-15"
   },
   {
     "_id": "A302",
     "title": "Orbital Calculations",
     "course": "RS103",
     "type": "assignment",
-    "points": 100
+    "description": "This assignment is about orbital calculations.",
+    "points": 100,
+    "dueDate": "2023-01-15",
+    "availableFromDate": "2023-01-01",
+    "availableUntilDate": "2023-01-15"
   },
   {
     "_id": "A303",
     "title": "Systems Engineering Exam",
     "course": "RS103",
     "type": "assignment",
-    "points": 100
+    "description": "This exam is about systems engineering.",
+    "points": 100,
+    "dueDate": "2023-01-15",
+    "availableFromDate": "2023-01-01",
+    "availableUntilDate": "2023-01-15"
   }
 ]

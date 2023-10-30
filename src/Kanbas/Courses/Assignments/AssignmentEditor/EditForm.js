@@ -94,9 +94,7 @@ function EditForm() {
                 </select>
 
                 <div>
-
                     <h5 className="mt-1 mb-0">Online Entry Options</h5>
-
 
                     <input type="checkbox" value="TEXT-ENTRY"
                            name="text-entry" id="chkbox-text-entry" className={"me-1"} checked/>
@@ -119,9 +117,7 @@ function EditForm() {
                         <option id="unlimited">Unlimited</option>
                         <option id="one">1 Attempt</option>
                     </select>
-
                 </div>
-
             </div>
         </div>
 

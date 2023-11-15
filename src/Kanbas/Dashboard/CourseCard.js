@@ -5,12 +5,12 @@ function CourseCard({course, index, setCourse, deleteFunction}) {
     const {_id, name, number, startDate, endDate} = course;
     const course_heading = name;
     const course_subtitle = name + " - " + number;
-    const course_tertiary = _id + " " + endDate;
+    const course_tertiary = endDate;
 
     return (
         <>
             <Link
-                to={`/Kanbas/Courses/${_id}`}
+                to={`/Kanbas/Courses/${_id['$oid']}`}
                 key={index}>
                 <div className={"card"}>
                     <img className={"card-img-top"} src="/img/react.png" alt="Card image cap"></img>
@@ -27,7 +27,7 @@ function CourseCard({course, index, setCourse, deleteFunction}) {
                         </button>
                         <button className={"btn btn-danger mt-2"} onClick={(event) => {
                             event.preventDefault();
-                            deleteFunction(course._id);
+                            deleteFunction(course);
                         }}>Delete
                         </button>
                     </div>

@@ -1,11 +1,9 @@
 import "./index.css";
 import {Link, useLocation, useParams} from "react-router-dom";
-import db from "../../Database";
 import {RxHamburgerMenu} from "react-icons/rx";
 
-function BreadcrumbHeader() {
+function BreadcrumbHeader({course}) {
     const {courseId} = useParams();
-    const course = db.courses.find((course) => course._id === courseId);
     const pathParts = useLocation().pathname.split("/");
     const pathPartsFromCourseIdExcludingLast = pathParts.slice(pathParts.indexOf(courseId), pathParts.length - 1);
 
@@ -22,7 +20,7 @@ function BreadcrumbHeader() {
                         {pathPartsFromCourseIdExcludingLast.map((pathPart, index) => {
                             let pathPartToDisplay = pathPart;
                             if (pathPart === courseId) {
-                                pathPartToDisplay = `${course.name} - ${courseId}`;
+                                pathPartToDisplay = `${course.name} - ${course.number}`;
                             }
 
                             link = `${link}/${pathPart}`

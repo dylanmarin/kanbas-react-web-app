@@ -43,7 +43,7 @@ function Dashboard({courses, course, setCourse, addNewCourse, deleteCourse, upda
                         <button className={"btn btn-success"} onClick={addNewCourse}>
                             Add
                         </button>
-                        <button className={"btn btn-primary"} onClick={updateCourse}>
+                        <button className={"btn btn-primary"} onClick={() => updateCourse(course)}>
                             Update
                         </button>
 

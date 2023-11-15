@@ -18,8 +18,7 @@ function EditForm() {
                 dispatch(setAssignment({...assignment, title: e.target.value}))
             }}
             value={assignment.title}
-            type="text"
-        />
+            type="text"/>
 
         <textarea
             cols="50" rows="5"

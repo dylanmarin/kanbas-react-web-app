@@ -14,17 +14,6 @@ const initialState = {
     },
 };
 
-const defaultAssignment = {
-    title: "New Assignment",
-    description: "Default Description",
-    type: "assignment",
-    points: 100,
-    dueDate: "2023-01-15",
-    availableFromDate: "2023-01-01",
-    availableUntilDate: "2023-01-15"
-}
-
-
 const assignmentsSlice = createSlice({
         name: "assignments",
         initialState,

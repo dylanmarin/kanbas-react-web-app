@@ -9,11 +9,11 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import SmallScreenNavigation from "./CourseNavigation/SmallScreenNavigation";
-import { useState, useEffect } from "react";
+import {useState, useEffect} from "react";
 import axios from "axios";
 
 function Courses() {
-    const { courseId } = useParams();
+    const {courseId} = useParams();
     const URL = "http://localhost:4000/api/courses";
     const [course, setCourse] = useState({});
 
@@ -26,6 +26,7 @@ function Courses() {
     useEffect(() => {
         findCourseById(courseId);
     }, [courseId]);
+
 
     return (
         <>

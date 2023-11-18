@@ -17,7 +17,6 @@ function Courses() {
     const URL = "http://localhost:4000/api/courses";
     const [course, setCourse] = useState({});
 
-    console.log(URL)
     const findCourseById = async (courseId) => {
         const response = await axios.get(
             `${URL}/${courseId}`

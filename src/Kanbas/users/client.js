@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const BASE_API = process.env.REACT_APP_API_BASE;
+export const BASE_API = process.env.REACT_APP_API_BASE_A6;
 export const USERS_API = `${BASE_API}/users`;
 
 const request = axios.create({

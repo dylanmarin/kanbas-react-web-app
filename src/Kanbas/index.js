@@ -20,7 +20,10 @@ function Kanbas() {
         _id: {'$oid': null}
     });
 
-    const URL = "http://localhost:4000/api/courses";
+    const BASE_URL = process.env.REACT_APP_API_BASE;
+    const URL = `${BASE_URL}/courses`;
+
+
     const findAllCourses = async () => {
         const response = await axios.get(URL);
         setCourses(response.data);

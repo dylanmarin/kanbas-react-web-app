@@ -16,7 +16,7 @@ function Courses() {
     const {courseId} = useParams();
 
 
-    const API_BASE = process.env.REACT_APP_API_BASE;
+    const API_BASE = process.env.REACT_APP_API_BASE_A6;
     const URL = `${API_BASE}/courses`;
 
 

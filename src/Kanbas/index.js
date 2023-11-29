@@ -20,7 +20,7 @@ function Kanbas() {
         _id: {'$oid': null}
     });
 
-    const BASE_URL = process.env.REACT_APP_API_BASE;
+    const BASE_URL = process.env.REACT_APP_API_BASE_A6;
     const URL = `${BASE_URL}/courses`;
 
 

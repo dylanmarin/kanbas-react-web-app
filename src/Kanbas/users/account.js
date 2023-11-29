@@ -22,9 +22,7 @@ function Account() {
     };
 
     const signout = async () => {
-        console.log('before signout')
         await client.signout();
-        console.log('after signout')
         navigate("/Kanbas/signin");
     };
 

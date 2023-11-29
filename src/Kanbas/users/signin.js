@@ -10,13 +10,19 @@ function Signin() {
         navigate("/Kanbas/Account");
     };
     return (
-        <div>
+        <div className={"container text-center"}>
             <h1>Signin</h1>
-            <input value={credentials.username}
-                   onChange={(e) => setCredentials({...credentials, username: e.target.value})}/>
-            <input value={credentials.password}
-                   onChange={(e) => setCredentials({...credentials, password: e.target.value})}/>
-            <button onClick={signin}> Signin</button>
+            <form>
+                <div className={"my-1"}>
+                    <input value={credentials.username}
+                           onChange={(e) => setCredentials({...credentials, username: e.target.value})}/>
+                </div>
+                <div className={"my-1"}>
+                    <input value={credentials.password}
+                           onChange={(e) => setCredentials({...credentials, password: e.target.value})}/>
+                </div>
+                <button className={"my-1 btn btn-primary"} onClick={signin}> Signin</button>
+            </form>
         </div>
     );
 }

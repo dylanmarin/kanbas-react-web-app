@@ -39,6 +39,16 @@ function KanbasNavigation() {
                             </Link>
                         )
                     )}
+                    <Link
+                        to={`/Kanbas/signin`}
+                        className={`list-group-item ${pathname.includes('/signin') && "active"}`}>
+                        Sign In
+                    </Link>
+                    <Link
+                        to={`/Kanbas/signup`}
+                        className={`list-group-item ${pathname.includes('/signun') && "active"}`}>
+                        Sign Up
+                    </Link>
                 </div>
             </div>
             <div className={"wd-kanbas-navigation-spacer col-auto d-none d-md-none d-lg-block"}></div>

@@ -42,6 +42,13 @@ function Account() {
             {account && (
                 <div className={"text-center"}>
                     <div>
+                        <input className={"form-control"} value={account.username}
+                               onChange={(e) => setAccount({
+                                   ...account,
+                                   username: e.target.value
+                               })}/>
+                    </div>
+                    <div>
                         <input className={"form-control"} value={account.password}
                                onChange={(e) => setAccount({
                                    ...account,

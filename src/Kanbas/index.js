@@ -31,7 +31,7 @@ function Kanbas() {
 
     useEffect(() => {
         findAllCourses();
-    }, [courses]);
+    }, []);
 
     const addNewCourse = async () => {
         const response = await axios.post(URL, course);
